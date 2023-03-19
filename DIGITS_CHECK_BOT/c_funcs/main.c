@@ -28,6 +28,7 @@ void is_simple_check (int number) {
     int * arr = NULL;
     arr = (int *) malloc(1 * sizeof(int));
     int arr_size = 1;
+    printf("%d\n", arr_size);
 //    for (int i = 1; i <= number; i++) {
 //        if ((number % i) == 0) {
 //            arr = (int *) realloc(arr, (arr_size + 1)*sizeof(int));
