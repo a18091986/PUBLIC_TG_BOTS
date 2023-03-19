@@ -1,6 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-main_menu_items = ['!Что_умеет_бот', "!Ограничения_на_числа",
+main_menu_items = ['!О_боте', "!Ограничения_на_числа",
                    '!Какие_проверки_реализованы', '!Какие_проверки_планируются']
 
 

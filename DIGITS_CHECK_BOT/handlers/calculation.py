@@ -15,7 +15,8 @@ async def calculate(msg: types.Message):
     number = msg.text
     decimal_1 = number.split('.')
     decimal_2 = number.split(',')
-    describe_number_str = f"Число должно быть:\n- целое\n- положительное\n- меньше {MAX_NUMBER}\n"
+    describe_number_str = f"Тут тебе не chatGPT!\n" \
+                          f"Введи число, которое:\n- целое\n- положительное\n- меньше {MAX_NUMBER}\n"
     if number.isdigit():
         if str(int(number)) == number:
             if int(number) > MAX_NUMBER or int(number) <= 0:

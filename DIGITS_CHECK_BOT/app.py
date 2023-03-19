@@ -8,7 +8,7 @@ from utils.logging_utils import *
 
 config = configparser.ConfigParser()
 config.read('config.ini', encoding='utf-8')
-bot_users = config['BOT_START_SEND_USERS']['BOT_USERS']
+bot_users = eval(config['BOT_START_SEND_USERS']['BOT_USERS'])
 MAX_NUMBER = int(config['CONSTANTS']['MAX_NUMBER'])
 
 

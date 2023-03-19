@@ -11,7 +11,7 @@ void print_answer_to_file(int * arr, int size) {
         else
             fprintf(file, "%d ", arr[i]);
     }
-    fprintf(file, "\n");
+    fprintf(file, "\n\n");
     fclose(file);
 }
 
@@ -32,11 +32,11 @@ void is_simple_check (int number) {
     FILE *file = NULL;
     file = fopen("answer.txt", "a");
     if (arr_size != 2) {    
-        fprintf(file, "%d делится на: ", number);
+        fprintf(file, "- делится на: ");
         fclose(file);    
         print_answer_to_file(arr, arr_size);    
     } else {
-        fprintf(file, "%d - простое, т.е. делится только на 1 и на само себя\n", number);
+        fprintf(file, "- простое, т.е. делится только на 1 и на само себя\n\n");
         fclose(file);
     }
 }
@@ -46,10 +46,10 @@ void is_fibo_check (int number) {
     file = fopen("answer.txt", "a");
     switch (number) {
     case 0:
-        fprintf(file, "%d - 1 член ряда Фибоначчи\n", number);
+        fprintf(file, "- 1 член ряда Фибоначчи\n\n");
         break;
     case 1:
-        fprintf(file, "%d - 2 член ряда Фибоначчи\n", number);
+        fprintf(file, "- 2 член ряда Фибоначчи\n\n");
         break;
     default: 
         int f_el = 0;
@@ -59,11 +59,11 @@ void is_fibo_check (int number) {
             f_el = s_el;
             s_el = current;
             if (current == number) {
-                fprintf(file, "%d - %d член ряда Фибоначчи\n", number, i);
+                fprintf(file, "- %d член ряда Фибоначчи\n\n", i);
                 break;
             }
             else if (current > number) {
-                fprintf(file, "%d не принадлежит к ряду чисел Фибоначчи\n", number);
+                fprintf(file, "- не принадлежит к ряду чисел Фибоначчи\n\n");
                 break;
             }
         }  
@@ -73,13 +73,14 @@ void is_fibo_check (int number) {
 
 int main(int argc, char * argv[]) {
     if (argc!=2) {
-        printf("Not enough arguments count\n");
+        printf("Not enough arguments count\n\n");
         exit(1);
     }
+    int income_number = atoi(argv[1]);
     FILE *file = NULL;
     file = fopen("answer.txt", "w");
-    fclose(file);  
-    int income_number = atoi(argv[1]);
+    fprintf(file, "--------------- %d ---------------\n\n", income_number);
+    fclose(file);
     is_simple_check(income_number);
     is_fibo_check(income_number);
     return 0;
