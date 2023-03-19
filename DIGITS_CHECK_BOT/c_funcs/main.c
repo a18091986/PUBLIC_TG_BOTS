@@ -35,8 +35,9 @@ void is_simple_check (int number) {
             arr[arr_size-1] = i;
             if (i != number) arr_size++;
         }
+
 //    arr[arr_size] = number;
-//    }
+    }
 //    FILE *file = NULL;
 //    file = fopen("answer.txt", "a");
 //    if (arr_size != 2) {
