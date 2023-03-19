@@ -5,8 +5,8 @@
 void print_answer_to_file(int * arr, int size) {
     FILE *file = NULL;
     file = fopen("answer.txt", "a");
-    for (int i = 0; i < size - 1; i++) {
-        if (i == size - 2)
+    for (int i = 0; i < size; i++) {
+        if (i == size - 1)
             fprintf(file, "%d", arr[i]);
         else
             fprintf(file, "%d ", arr[i]);
