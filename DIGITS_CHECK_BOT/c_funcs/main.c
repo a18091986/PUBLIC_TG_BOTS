@@ -29,12 +29,12 @@ void is_simple_check (int number) {
     arr = (int *) malloc(1 * sizeof(int));
     int arr_size = 1;
     printf("%d\n", arr_size);
-//    for (int i = 1; i <= number; i++) {
-//        if ((number % i) == 0) {
-//            arr = (int *) realloc(arr, (arr_size + 1)*sizeof(int));
-//            arr[arr_size-1] = i;
-//            if (i != number) arr_size++;
-//        }
+    for (int i = 1; i <= number; i++) {
+        if ((number % i) == 0) {
+            arr = (int *) realloc(arr, (arr_size + 1)*sizeof(int));
+            arr[arr_size-1] = i;
+            if (i != number) arr_size++;
+        }
 //    arr[arr_size] = number;
 //    }
 //    FILE *file = NULL;
