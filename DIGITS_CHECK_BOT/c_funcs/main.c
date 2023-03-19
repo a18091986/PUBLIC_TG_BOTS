@@ -33,7 +33,8 @@ void is_simple_check (int number) {
         if ((number % i) == 0) {
             arr = (int *) realloc(arr, (arr_size + 1)*sizeof(int));
             arr[arr_size-1] = i;
-            if (i != number) arr_size++;
+            arr_size++;
+//            if (i != number) arr_size++;
         }
 
     arr[arr_size] = number;
