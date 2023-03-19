@@ -26,7 +26,7 @@ async def calculate(msg: types.Message):
                                                       f"{describe_number_str}\n on message \n{msg.text}\n\n",
                                                   print_in_terminal=False, loglevel=3)
             else:
-                subprocess.run(['c_funcs/c_func.exe', number], capture_output=True, text=True)
+                subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
                 with open('answer.txt', 'r', encoding='utf-8') as f:
                     answer = f.read()
                 await bot.send_message(chat_id=msg.from_user.id, text=answer,

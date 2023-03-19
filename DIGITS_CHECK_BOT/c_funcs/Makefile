@@ -3,7 +3,7 @@ FLAGS = -Wall -Werror -Wextra -std=c11
 all: clean_before main clean_after
 
 main: main.o
-		gcc $(FLAGS) main.o -o c_func
+		gcc $(FLAGS) main.o -o c_func.exe
 
 main.o:
 		gcc -c $(FLAGS) main.c -o main.o
@@ -14,7 +14,7 @@ main.o:
 # 		git push
 
 clean_before: 
-		del *.o *.exe
+		rm -rf *.o *.exe
 
 clean_after: 
-		del *.o
+		rm -rf *.o
