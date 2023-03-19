@@ -17,14 +17,6 @@ void print_answer_to_file(int * arr, int size) {
 
 
 void is_simple_check (int number) {
-//    printf("%d\n", number);
-//    FILE *file = NULL;
-//    file = fopen("answer.txt", "a");
-//    fprintf(file, "- простое, т.е. делится только на 1 и на само себя\n\n");
-//    fclose(file);
-
-
-
     int * arr = NULL;
     arr = (int *) malloc(1 * sizeof(int));
     int arr_size = 1;
@@ -33,10 +25,8 @@ void is_simple_check (int number) {
         if ((number % i) == 0) {
             arr = (int *) realloc(arr, (arr_size + 1)*sizeof(int));
             arr[arr_size-1] = i;
-//            arr_size++;
             if (i != number) arr_size++;
         }
-
     arr[arr_size-1] = number;
     }
     FILE *file = NULL;
