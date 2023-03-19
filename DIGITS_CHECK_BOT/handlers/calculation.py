@@ -5,6 +5,7 @@ from utils.kbs import get_kb
 from utils.logging_utils import log_in_file_and_print_in_terminal
 from utils.math_funcs import check_number_all_functions
 import subprocess
+from pathlib import Path
 
 config = configparser.ConfigParser()
 config.read('config.ini', encoding='utf-8')
@@ -26,7 +27,9 @@ async def calculate(msg: types.Message):
                                                       f"{describe_number_str}\n on message \n{msg.text}\n\n",
                                                   print_in_terminal=False, loglevel=3)
             else:
-                subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+                path = str(Path('c_funcs', 'c_func.exe'))
+                print(path)	
+                subprocess.run([path, number], capture_output=True, text=True)
                 with open('answer.txt', 'r', encoding='utf-8') as f:
                     answer = f.read()
                 await bot.send_message(chat_id=msg.from_user.id, text=answer,

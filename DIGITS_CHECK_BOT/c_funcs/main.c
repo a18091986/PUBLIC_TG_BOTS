@@ -34,11 +34,12 @@ void is_simple_check (int number) {
     if (arr_size != 2) {    
         fprintf(file, "- делится на: ");
         fclose(file);    
-        print_answer_to_file(arr, arr_size);    
+//        print_answer_to_file(arr, arr_size);    
     } else {
         fprintf(file, "- простое, т.е. делится только на 1 и на само себя\n\n");
         fclose(file);
     }
+    free(arr);
 }
 
 void is_fibo_check (int number) {
