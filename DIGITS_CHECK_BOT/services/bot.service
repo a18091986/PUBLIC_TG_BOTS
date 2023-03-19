@@ -1,0 +1,18 @@
+[Unit]
+Description=bot
+After=network.target
+
+[Service]
+User=root
+Group=adm
+Type=simple
+Environment=PYTHONPATH=/root/dash_iskandar/WORK/Dash/
+WorkingDirectory=/root/dash_iskandar/WORK/Dash/
+Restart=always
+ExecStart=/usr/bin/python3 /root/dash_iskandar/WORK/Dash/bot_info.py
+
+[Install]
+WantedBy=network.target
+
+test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/
+

@@ -1,0 +1,13 @@
+- https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/
+
+- cd /etc/systemd/system
+- your-service.service
+-
+- sudo systemctl daemon-reload
+- sudo systemctl start your-service.service
+- sudo systemctl status example.service
+- sudo systemctl enable example.service
+-
+- если не стартуют сервисы - посмотреть что пишется в ../var/log в файле syslog
+- установить все пакеты не только в виртуальное окружение, но и в систему
+- дать доступ на исполнение файлам
