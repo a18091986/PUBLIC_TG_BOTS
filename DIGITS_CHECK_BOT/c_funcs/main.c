@@ -17,11 +17,11 @@ void print_answer_to_file(int * arr, int size) {
 
 
 void is_simple_check (int number) {
-    printf("%d\n", number);
-    FILE *file = NULL;
-    file = fopen("answer.txt", "a");
-    fprintf(file, "- простое, т.е. делится только на 1 и на само себя\n\n");
-    fclose(file);
+//    printf("%d\n", number);
+//    FILE *file = NULL;
+//    file = fopen("answer.txt", "a");
+//    fprintf(file, "- простое, т.е. делится только на 1 и на само себя\n\n");
+//    fclose(file);
 
 
 
