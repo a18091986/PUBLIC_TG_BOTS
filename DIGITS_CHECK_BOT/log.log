@@ -1,0 +1,1073 @@
+aiogram 2023-03-19 16:22:54,221 WARNING Updates were skipped successfully.
+root 2023-03-19 16:22:54,378 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:23:18,502 CRITICAL SEND TO USER 5531646701 - a18091986
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+Gfggs
+
+
+asyncio 2023-03-19 16:23:21,516 ERROR Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=PermissionError(13, 'Permission denied')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 29, in calculate
+    subprocess.run(['c_funcs/c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: 'c_funcs/c_func.exe'
+asyncio 2023-03-19 16:24:42,125 ERROR Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=OSError(8, 'Exec format error')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 29, in calculate
+    subprocess.run(['c_funcs/c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: 'c_funcs/c_func.exe'
+asyncio 2023-03-19 16:28:01,707 ERROR Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 29, in calculate
+    subprocess.run(['c_funcs/c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs/c_func.exe'
+asyncio 2023-03-19 16:28:53,910 ERROR Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 29, in calculate
+    subprocess.run(['c_funcs/c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs/c_func.exe'
+root 2023-03-19 16:29:11,240 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 400 ---------------
+
+
+ on message 
+400
+
+
+root 2023-03-19 16:30:15,126 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 200 ---------------
+
+
+ on message 
+200
+
+
+root 2023-03-19 16:30:17,300 CRITICAL SEND TO USER 5531646701 - a18091986
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+aiogram 2023-03-19 16:30:37,892 WARNING Updates were skipped successfully.
+root 2023-03-19 16:30:37,995 CRITICAL SEND TO USER 608829856 start_message
+aiogram 2023-03-19 16:30:58,937 WARNING Updates were skipped successfully.
+root 2023-03-19 16:30:59,051 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:31:11,783 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 400 ---------------
+
+
+ on message 
+400
+
+
+aiogram 2023-03-19 16:34:27,551 WARNING Updates were skipped successfully.
+root 2023-03-19 16:34:27,652 CRITICAL SEND TO USER 608829856 start_message
+asyncio 2023-03-19 16:34:31,308 ERROR Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 29, in calculate
+    subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs\\c_func.exe'
+aiogram 2023-03-19 16:47:56,513 WARNING Updates were skipped successfully.
+root 2023-03-19 16:47:56,611 CRITICAL SEND TO USER 608829856 start_message
+asyncio 2023-03-19 16:48:01,394 ERROR Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 32, in calculate
+    subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs\\c_func.exe'
+aiogram 2023-03-19 16:48:08,835 WARNING Goodbye!
+aiogram 2023-03-19 16:48:28,015 WARNING Updates were skipped successfully.
+root 2023-03-19 16:48:28,102 CRITICAL SEND TO USER 608829856 start_message
+asyncio 2023-03-19 16:48:30,993 ERROR Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 32, in calculate
+    subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs\\c_func.exe'
+aiogram 2023-03-19 16:48:50,556 WARNING Goodbye!
+aiogram 2023-03-19 16:49:05,062 WARNING Updates were skipped successfully.
+root 2023-03-19 16:49:05,179 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:49:08,324 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+Tft
+
+
+asyncio 2023-03-19 16:49:11,721 ERROR Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at /root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 32, in calculate
+    subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs\\c_func.exe'
+aiogram 2023-03-19 16:49:38,104 WARNING Goodbye!
+aiogram 2023-03-19 16:50:00,259 WARNING Updates were skipped successfully.
+root 2023-03-19 16:50:00,382 CRITICAL SEND TO USER 608829856 start_message
+asyncio 2023-03-19 16:50:03,370 ERROR Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 32, in calculate
+    subprocess.run(['c_funcs\c_func.exe', number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'c_funcs\\c_func.exe'
+aiogram 2023-03-19 16:50:38,509 WARNING Goodbye!
+aiogram 2023-03-19 16:51:32,011 WARNING Updates were skipped successfully.
+root 2023-03-19 16:51:32,161 CRITICAL SEND TO USER 608829856 start_message
+asyncio 2023-03-19 16:51:35,050 ERROR Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/root/test_develop/PUBLIC_TG_BOTS/DIGITS_CHECK_BOT/handlers/calculation.py", line 32, in calculate
+    subprocess.run([path, number], capture_output=True, text=True)
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '../c_funcs/c_func.exe'
+aiogram 2023-03-19 16:51:44,812 WARNING Goodbye!
+aiogram 2023-03-19 16:52:03,507 WARNING Updates were skipped successfully.
+root 2023-03-19 16:52:03,598 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:52:07,108 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 400 ---------------
+
+
+ on message 
+400
+
+
+aiogram 2023-03-19 16:52:23,989 WARNING Goodbye!
+aiogram 2023-03-19 16:55:05,158 WARNING Updates were skipped successfully.
+root 2023-03-19 16:55:05,325 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:55:08,720 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 456 ---------------
+
+
+ on message 
+456
+
+
+aiogram 2023-03-19 16:55:13,207 WARNING Goodbye!
+aiogram 2023-03-19 16:57:46,468 WARNING Updates were skipped successfully.
+root 2023-03-19 16:57:46,644 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 16:57:49,551 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 100 ---------------
+
+
+ on message 
+67
+
+
+aiogram 2023-03-19 16:58:06,007 WARNING Goodbye!
+aiogram 2023-03-19 17:06:16,628 WARNING Updates were skipped successfully.
+root 2023-03-19 17:06:16,736 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 17:06:19,964 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 45 ---------------
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+45
+
+
+aiogram 2023-03-19 17:06:23,605 WARNING Goodbye!
+aiogram 2023-03-19 17:24:33,149 WARNING Updates were skipped successfully.
+root 2023-03-19 17:24:33,259 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 17:24:39,483 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 500 ---------------
+
+- делится на: 1 2 4 5 10 20 25 50 100 125 250 500
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+500
+
+
+root 2023-03-19 17:24:44,461 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 34 ---------------
+
+- делится на: 1 2 17 34
+
+- 10 член ряда Фибоначчи
+
+
+ on message 
+34
+
+
+root 2023-03-19 17:24:50,845 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 1000000 ---------------
+
+- делится на: 1 2 4 5 8 10 16 20 25 32 40 50 64 80 100 125 160 200 250 320 400 500 625 800 1000 1250 1600 2000 2500 3125 4000 5000 6250 8000 10000 12500 15625 20000 25000 31250 40000 50000 62500 100000 125000 200000 250000 500000 1000000
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+1000000
+
+
+root 2023-03-19 17:25:00,079 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 1000000000 ---------------
+
+- делится на: 1 2 4 5 8 10 16 20 25 32 40 50 64 80 100 125 128 160 200 250 256 320 400 500 512 625 640 800 1000 1250 1280 1600 2000 2500 2560 3125 3200 4000 5000 6250 6400 8000 10000 12500 12800 15625 16000 20000 25000 31250 32000 40000 50000 62500 64000 78125 80000 100000 125000 156250 160000 200000 250000 312500 320000 390625 400000 500000 625000 781250 800000 1000000 1250000 1562500 1600000 1953125 2000000 2500000 3125000 3906250 4000000 5000000 6250000 7812500 8000000 10000000 12500000 15625000 20000000 25000000 31250000 40000000 50000000 62500000 100000000 125000000 200000000 250000000 500000000 1000000000
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+1000000000
+
+
+root 2023-03-19 17:25:09,349 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+1000000001
+
+
+root 2023-03-19 17:25:17,967 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+-9
+
+
+root 2023-03-19 17:25:21,463 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+0
+
+
+root 2023-03-19 17:25:23,753 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+Vdhd
+
+
+root 2023-03-19 17:25:30,413 CRITICAL SEND TO USER 608829856 - behappymaniam
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 17:25:31,421 CRITICAL SEND TO USER 608829856 - behappymaniam
+Числа должны быть:
+- целые
+- положительные
+- меньше 1000000000
+
+ on message 
+!Ограничения_на_числа
+
+
+root 2023-03-19 17:25:33,414 CRITICAL SEND TO USER 608829856 - behappymaniam
+Реализовано: 
+1. Поиск всех делителей числа (проверка на простоту)
+2. Проверка на принадлженость числа к ряду чисел Фибоначчи
+
+ on message 
+!Какие_проверки_реализованы
+
+
+root 2023-03-19 17:25:34,811 CRITICAL SEND TO USER 608829856 - behappymaniam
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-19 17:25:36,090 CRITICAL SEND TO USER 608829856 - behappymaniam
+В планах: 
+1. Проверка числа на "совершенство"
+2. Проверка на принадлежность числа к ряду чисел Мерсенна
+3. Поиск дружественных чисел
+4. Проверка числа на принадлежность к множеству чисел Смита
+5. Проверка числа на принадлежность к числам Софи Жермеен
+6. Проверка числа на принадлежность к числам Люка
+7. Проверка числа на принадлежность к числам Ферма
+8. Проверка числа на принадлежность к числам Бернулли
+9. Поиск факториала числа
+10. Etc... 
+
+ on message 
+!Какие_проверки_планируются
+
+
+aiogram 2023-03-19 17:25:39,144 WARNING Goodbye!
+aiogram 2023-03-19 17:26:11,901 WARNING Updates were skipped successfully.
+root 2023-03-19 17:26:11,994 CRITICAL SEND TO USER 608829856 start_message
+aiogram 2023-03-19 17:26:31,474 WARNING Updates were skipped successfully.
+root 2023-03-19 17:26:31,587 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-19 17:33:44,890 CRITICAL SEND TO USER 608829856 - behappymaniam
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-19 17:33:48,148 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 123 ---------------
+
+- делится на: 1 3 41 123
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+123
+
+
+root 2023-03-19 17:33:55,110 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 34 ---------------
+
+- делится на: 1 2 17 34
+
+- 10 член ряда Фибоначчи
+
+
+ on message 
+34
+
+
+root 2023-03-19 17:34:00,257 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 10000 ---------------
+
+- делится на: 1 2 4 5 8 10 16 20 25 40 50 80 100 125 200 250 400 500 625 1000 1250 2000 2500 5000 10000
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+10000
+
+
+root 2023-03-19 17:34:35,625 CRITICAL SEND TO USER 147602520 - martivs
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+/start
+
+
+root 2023-03-19 17:34:39,712 CRITICAL SEND TO USER 507688745 - NervousBeef7
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+/start
+
+
+root 2023-03-19 17:34:45,306 CRITICAL SEND TO USER 507688745 - NervousBeef7
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-19 17:34:52,983 CRITICAL SEND TO USER 147602520 - martivs
+--------------- 2222 ---------------
+
+- делится на: 1 2 11 22 101 202 1111 2222
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+2222
+
+
+root 2023-03-19 17:34:55,950 CRITICAL SEND TO USER 507688745 - NervousBeef7
+Реализовано: 
+1. Поиск всех делителей числа (проверка на простоту)
+2. Проверка на принадлженость числа к ряду чисел Фибоначчи
+
+ on message 
+!Какие_проверки_реализованы
+
+
+root 2023-03-19 17:35:27,147 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+/start
+
+
+root 2023-03-19 17:36:35,292 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+--------------- 689 ---------------
+
+- делится на: 1 13 53 689
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+689
+
+
+root 2023-03-19 17:45:48,853 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 5000 ---------------
+
+- делится на: 1 2 4 5 8 10 20 25 40 50 100 125 200 250 500 625 1000 1250 2500 5000
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+5000
+
+
+root 2023-03-19 17:45:55,031 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 34 ---------------
+
+- делится на: 1 2 17 34
+
+- 10 член ряда Фибоначчи
+
+
+ on message 
+34
+
+
+root 2023-03-19 17:46:02,323 CRITICAL SEND TO USER 608829856 - behappymaniam
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+0
+
+
+root 2023-03-19 17:55:38,633 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 56 ---------------
+
+- делится на: 1 2 4 7 8 14 28 56
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+56
+
+
+root 2023-03-19 17:57:22,534 CRITICAL SEND TO USER 5531646701 - a18091986
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+Test
+
+
+root 2023-03-19 17:57:27,275 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 56789 ---------------
+
+- делится на: 1 109 521 56789
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+56789
+
+
+root 2023-03-19 17:57:45,151 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 17 ---------------
+
+- простое, т.е. делится только на 1 и на само себя
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+17
+
+
+root 2023-03-19 17:57:50,324 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 13 ---------------
+
+- простое, т.е. делится только на 1 и на само себя
+
+- 8 член ряда Фибоначчи
+
+
+ on message 
+13
+
+
+root 2023-03-19 17:57:57,365 CRITICAL SEND TO USER 5531646701 - a18091986
+--------------- 9 ---------------
+
+- делится на: 1 3 9
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+9
+
+
+root 2023-03-19 17:58:23,038 CRITICAL SEND TO USER 5531646701 - a18091986
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 17:58:24,138 CRITICAL SEND TO USER 5531646701 - a18091986
+Числа должны быть:
+- целые
+- положительные
+- меньше 1000000000
+
+ on message 
+!Ограничения_на_числа
+
+
+root 2023-03-19 17:59:38,676 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 18:00:17,710 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+--------------- 2580 ---------------
+
+- делится на: 1 2 3 4 5 6 10 12 15 20 30 43 60 86 129 172 215 258 430 516 645 860 1290 2580
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+2580
+
+
+root 2023-03-19 18:00:28,454 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 18:00:31,146 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-19 18:00:37,468 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+Числа должны быть:
+- целые
+- положительные
+- меньше 1000000000
+
+ on message 
+!Ограничения_на_числа
+
+
+root 2023-03-19 18:00:40,356 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+Реализовано: 
+1. Поиск всех делителей числа (проверка на простоту)
+2. Проверка на принадлженость числа к ряду чисел Фибоначчи
+
+ on message 
+!Какие_проверки_реализованы
+
+
+root 2023-03-19 18:00:45,793 CRITICAL SEND TO USER 5212737811 - opanasenko_svetlana
+В планах: 
+1. Проверка числа на "совершенство"
+2. Проверка на принадлежность числа к ряду чисел Мерсенна
+3. Поиск дружественных чисел
+4. Проверка числа на принадлежность к множеству чисел Смита
+5. Проверка числа на принадлежность к числам Софи Жермеен
+6. Проверка числа на принадлежность к числам Люка
+7. Проверка числа на принадлежность к числам Ферма
+8. Проверка числа на принадлежность к числам Бернулли
+9. Поиск факториала числа
+10. Etc... 
+
+ on message 
+!Какие_проверки_планируются
+
+
+root 2023-03-19 18:08:23,549 CRITICAL SEND TO USER 845096880 - duke_0001
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+/start
+
+
+root 2023-03-19 18:08:33,745 CRITICAL SEND TO USER 845096880 - duke_0001
+--------------- 34 ---------------
+
+- делится на: 1 2 17 34
+
+- 10 член ряда Фибоначчи
+
+
+ on message 
+34
+
+
+root 2023-03-19 18:08:45,384 CRITICAL SEND TO USER 845096880 - duke_0001
+--------------- 35 ---------------
+
+- делится на: 1 5 7 35
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+35
+
+
+root 2023-03-19 18:12:10,336 CRITICAL SEND TO USER 845096880 - duke_0001
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+-34
+
+
+root 2023-03-19 18:29:59,005 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 56 ---------------
+
+- делится на: 1 2 4 7 8 14 28 56
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+56
+
+
+root 2023-03-19 18:30:02,126 CRITICAL SEND TO USER 608829856 - behappymaniam
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 18:30:17,870 CRITICAL SEND TO USER 608829856 - behappymaniam
+В планах: 
+1. Проверка числа на "совершенство"
+2. Проверка на принадлежность числа к ряду чисел Мерсенна
+3. Поиск дружественных чисел
+4. Проверка числа на принадлежность к множеству чисел Смита
+5. Проверка числа на принадлежность к числам Софи Жермеен
+6. Проверка числа на принадлежность к числам Люка
+7. Проверка числа на принадлежность к числам Ферма
+8. Проверка числа на принадлежность к числам Бернулли
+9. Поиск факториала числа
+10. Etc... 
+
+ on message 
+!Какие_проверки_планируются
+
+
+root 2023-03-19 18:51:21,615 CRITICAL SEND TO USER 845096880 - duke_0001
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+24+45
+
+
+root 2023-03-19 18:51:37,255 CRITICAL SEND TO USER 845096880 - duke_0001
+Тут тебе не chatGPT!
+Введи число, которое:
+- целое
+- положительное
+- меньше 1000000000
+
+ on message 
+0.2
+
+
+root 2023-03-19 20:27:34,545 CRITICAL SEND TO USER 594245906 - None
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+/start
+
+
+root 2023-03-19 20:27:53,703 CRITICAL SEND TO USER 594245906 - None
+--------------- 7 ---------------
+
+- простое, т.е. делится только на 1 и на само себя
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+7
+
+
+root 2023-03-19 20:28:08,543 CRITICAL SEND TO USER 594245906 - None
+--------------- 153 ---------------
+
+- делится на: 1 3 9 17 51 153
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+153
+
+
+root 2023-03-19 20:29:25,766 CRITICAL SEND TO USER 594245906 - None
+--------------- 271 ---------------
+
+- простое, т.е. делится только на 1 и на само себя
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+271
+
+
+root 2023-03-19 20:29:35,970 CRITICAL SEND TO USER 594245906 - None
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 20:29:38,548 CRITICAL SEND TO USER 594245906 - None
+Числа должны быть:
+- целые
+- положительные
+- меньше 1000000000
+
+ on message 
+!Ограничения_на_числа
+
+
+root 2023-03-19 20:29:43,179 CRITICAL SEND TO USER 594245906 - None
+Реализовано: 
+1. Поиск всех делителей числа (проверка на простоту)
+2. Проверка на принадлженость числа к ряду чисел Фибоначчи
+
+ on message 
+!Какие_проверки_реализованы
+
+
+root 2023-03-19 20:29:53,373 CRITICAL SEND TO USER 594245906 - None
+В планах: 
+1. Проверка числа на "совершенство"
+2. Проверка на принадлежность числа к ряду чисел Мерсенна
+3. Поиск дружественных чисел
+4. Проверка числа на принадлежность к множеству чисел Смита
+5. Проверка числа на принадлежность к числам Софи Жермеен
+6. Проверка числа на принадлежность к числам Люка
+7. Проверка числа на принадлежность к числам Ферма
+8. Проверка числа на принадлежность к числам Бернулли
+9. Поиск факториала числа
+10. Etc... 
+
+ on message 
+!Какие_проверки_планируются
+
+
+root 2023-03-19 22:51:05,781 CRITICAL SEND TO USER 147602520 - martivs
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 22:51:07,730 CRITICAL SEND TO USER 147602520 - martivs
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-19 22:51:20,935 CRITICAL SEND TO USER 147602520 - martivs
+Реализовано: 
+1. Поиск всех делителей числа (проверка на простоту)
+2. Проверка на принадлженость числа к ряду чисел Фибоначчи
+
+ on message 
+!Какие_проверки_реализованы
+
+
+root 2023-03-19 22:51:45,980 CRITICAL SEND TO USER 147602520 - martivs
+--------------- 999999997 ---------------
+
+- делится на: 1 71 2251 6257 159821 444247 14084507 999999997
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+999999997
+
+
+root 2023-03-19 22:52:00,517 CRITICAL SEND TO USER 147602520 - martivs
+выбери пункт меню или отправь мне какое-нибудь число &lt; 1000000000
+ on message 
+!В_главное_меню
+
+
+root 2023-03-19 22:52:03,611 CRITICAL SEND TO USER 147602520 - martivs
+В планах: 
+1. Проверка числа на "совершенство"
+2. Проверка на принадлежность числа к ряду чисел Мерсенна
+3. Поиск дружественных чисел
+4. Проверка числа на принадлежность к множеству чисел Смита
+5. Проверка числа на принадлежность к числам Софи Жермеен
+6. Проверка числа на принадлежность к числам Люка
+7. Проверка числа на принадлежность к числам Ферма
+8. Проверка числа на принадлежность к числам Бернулли
+9. Поиск факториала числа
+10. Etc... 
+
+ on message 
+!Какие_проверки_планируются
+
+
+root 2023-03-19 22:52:26,688 CRITICAL SEND TO USER 147602520 - martivs
+Числа должны быть:
+- целые
+- положительные
+- меньше 1000000000
+
+ on message 
+!Ограничения_на_числа
+
+
+root 2023-03-21 06:05:34,428 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 30 ---------------
+
+- делится на: 1 2 3 5 6 10 15 30
+
+- не принадлежит к ряду чисел Фибоначчи
+
+
+ on message 
+30
+
+
+aiogram 2023-03-21 22:45:33,926 WARNING Updates were skipped successfully.
+root 2023-03-21 22:45:34,013 CRITICAL SEND TO USER 608829856 start_message
+root 2023-03-21 22:45:48,484 CRITICAL SEND TO USER 608829856 - behappymaniam
+Данный бот собирается выяснять различные интересные факты о присылаемых ему числах.
+Под капотом:
+python (aiogram)
+С, C#, C++ (функционал)
+ on message 
+!О_боте
+
+
+root 2023-03-23 22:42:05,125 CRITICAL SEND TO USER 608829856 - behappymaniam
+--------------- 34 ---------------
+
+- делится на: 1 2 17 34
+
+- 10 член ряда Фибоначчи
+
+
+ on message 
+34
+
+
