@@ -4,6 +4,8 @@
 *.ini
 *.pkl
 **/answer.txt
+*.exe
+**/.exe
 
 # directories
 **/serialize_files
