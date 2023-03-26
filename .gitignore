@@ -4,6 +4,7 @@
 *.ini
 *.pkl
 **/answer.txt
+**/.log
 
 # directories
 **/serialize_files
