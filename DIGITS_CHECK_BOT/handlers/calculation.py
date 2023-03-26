@@ -1,8 +1,11 @@
 import configparser
 from aiogram import types, Dispatcher
+
+from utils.common import add_user_in_txt
 from utils.create_bot import bot
 from utils.kbs import get_kb
 from utils.logging_utils import log_in_file_and_print_in_terminal
+from utils.math_fucs import calculate_factorial, calculate_triangle_number
 from utils.math_funcs import check_number_all_functions
 import subprocess
 from pathlib import Path
@@ -10,9 +13,12 @@ from pathlib import Path
 config = configparser.ConfigParser()
 config.read('config.ini', encoding='utf-8')
 MAX_NUMBER = int(config['CONSTANTS']['MAX_NUMBER'])
+FACTORIAL_CONSTRAINT = int(config['CONSTANTS']['FACTORIAL'])
+TRIANGLE_CONSTRAINT = int(config['CONSTANTS']['TRIANGLE'])
 
 
 async def calculate(msg: types.Message):
+    add_user_in_txt(msg.from_user.id)
     number = msg.text
     decimal_1 = number.split('.')
     decimal_2 = number.split(',')
@@ -28,10 +34,16 @@ async def calculate(msg: types.Message):
                                                   print_in_terminal=False, loglevel=3)
             else:
                 path = str(Path('c_funcs', 'c_func.exe'))
-                print(path)	
+                # print(path)
                 subprocess.run([path, number], capture_output=True, text=True)
                 with open('answer.txt', 'r', encoding='utf-8') as f:
                     answer = f.read()
+                if number < FACTORIAL_CONSTRAINT:
+                    answer += f"Факториал числа {number} (рассчитывается для чисел < {FACTORIAL_CONSTRAINT})" \
+                              f"{calculate_factorial(number)}\n"
+                if number < TRIANGLE_CONSTRAINT:
+                    answer += f"треугольное число для {number} (рассчитывается для чисел < {TRIANGLE_CONSTRAINT})" \
+                              f"{calculate_triangle_number(number)}\n"
                 await bot.send_message(chat_id=msg.from_user.id, text=answer,
                                        reply_markup=get_kb(['!В_главное_меню']), parse_mode='html')
                 log_in_file_and_print_in_terminal(msg=f"SEND TO USER {msg.from_user.id} - {msg.from_user.username}\n"
