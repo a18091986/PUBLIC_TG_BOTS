@@ -36,7 +36,7 @@ async def calculate(msg: types.Message):
                 number = int(number)
                 path = str(Path('c_funcs', 'c_func.exe'))
                 # print(path)
-                subprocess.run([path, number], capture_output=True, text=True)
+                subprocess.run([path, str(number)], capture_output=True, text=True)
                 with open('answer.txt', 'r', encoding='utf-8') as f:
                     answer = f.read()
                 if number < FACTORIAL_CONSTRAINT:
