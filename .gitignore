@@ -1,10 +1,14 @@
 *.env
-*.log
 *.session*
 *.ini
 *.pkl
 **/answer.txt
+<<<<<<< HEAD
 **/.log
+=======
+*.exe
+**/.exe
+>>>>>>> 9eb500b45c15c04f50aeba498071958d01c103bd
 
 # directories
 **/serialize_files
@@ -85,7 +89,6 @@
 #*.pot
 
 # Django stuff:
-#*.log
 #local_settings.py
 #db.sqlite3
 #db.sqlite3-journal
