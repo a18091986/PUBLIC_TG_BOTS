@@ -42,12 +42,12 @@ async def calculate(msg: types.Message):
                 log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
 
                 if number < FACTORIAL_CONSTRAINT:
-                    answer += f"- факториал числа {number} (рассчитывается для чисел < {FACTORIAL_CONSTRAINT})" \
+                    answer += f"- факториал числа {number}\n(рассчитывается для чисел < {FACTORIAL_CONSTRAINT})\n" \
                               f"{calculate_factorial(number)}\n\n"
                     log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
 
                 if number < TRIANGLE_CONSTRAINT:
-                    answer += f"- треугольное число для {number} (рассчитывается для чисел < {TRIANGLE_CONSTRAINT})" \
+                    answer += f"- треугольное число для {number}\n(рассчитывается для чисел < {TRIANGLE_CONSTRAINT})\n" \
                               f"{calculate_triangle_number(number)}\n\n"
                     log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
 
