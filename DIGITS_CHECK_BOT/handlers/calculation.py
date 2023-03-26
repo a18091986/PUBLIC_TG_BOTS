@@ -19,7 +19,7 @@ TRIANGLE_CONSTRAINT = int(config['CONSTANTS']['TRIANGLE'])
 
 async def calculate(msg: types.Message):
     add_user_in_txt(msg.from_user.id)
-    number = msg.text
+    number = int(msg.text)
     decimal_1 = number.split('.')
     decimal_2 = number.split(',')
     describe_number_str = f"Тут тебе не chatGPT!\n" \
