@@ -19,7 +19,7 @@ TRIANGLE_CONSTRAINT = int(config['CONSTANTS']['TRIANGLE'])
 
 async def calculate(msg: types.Message):
     add_user_in_txt(msg.from_user.id)
-    number = int(msg.text)
+    number = msg.text
     decimal_1 = number.split('.')
     decimal_2 = number.split(',')
     describe_number_str = f"Тут тебе не chatGPT!\n" \
@@ -33,6 +33,7 @@ async def calculate(msg: types.Message):
                                                       f"{describe_number_str}\n on message \n{msg.text}\n\n",
                                                   print_in_terminal=False, loglevel=3)
             else:
+                number = int(number)
                 path = str(Path('c_funcs', 'c_func.exe'))
                 # print(path)
                 subprocess.run([path, number], capture_output=True, text=True)
