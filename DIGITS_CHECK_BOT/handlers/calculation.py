@@ -40,16 +40,20 @@ async def calculate(msg: types.Message):
                 with open('answer.txt', 'r', encoding='utf-8') as f:
                     answer = f.read()
                 log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
+
                 if number < FACTORIAL_CONSTRAINT:
-                    answer += f"Факториал числа {number} (рассчитывается для чисел < {FACTORIAL_CONSTRAINT})" \
-                              f"{calculate_factorial(number)}\n"
+                    answer += f"- факториал числа {number} (рассчитывается для чисел < {FACTORIAL_CONSTRAINT})" \
+                              f"{calculate_factorial(number)}\n\n"
                     log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
+
                 if number < TRIANGLE_CONSTRAINT:
-                    answer += f"треугольное число для {number} (рассчитывается для чисел < {TRIANGLE_CONSTRAINT})" \
-                              f"{calculate_triangle_number(number)}\n"
+                    answer += f"- треугольное число для {number} (рассчитывается для чисел < {TRIANGLE_CONSTRAINT})" \
+                              f"{calculate_triangle_number(number)}\n\n"
                     log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
+
                 await bot.send_message(chat_id=msg.from_user.id, text=answer,
-                                       reply_markup=get_kb(['!В_главное_меню']), parse_mode='html')
+                                       reply_markup=get_kb(['!В_главное_меню']), parse_mode='text')
+
                 log_in_file_and_print_in_terminal(msg=f"SEND TO USER {msg.from_user.id} - {msg.from_user.username}\n"
                                                       f"{answer}\n on message \n{msg.text}\n\n",
                                                   print_in_terminal=False, loglevel=3)
