@@ -2,7 +2,7 @@ import logging
 
 from utils.text_utils import print_info
 
-logging.basicConfig(level=logging.DEBUG, filename="log.log", filemode='a',
+logging.basicConfig(level=logging.DEBUG, filename="log.log", filemode='w',
                     format="%(name)s %(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger()
 

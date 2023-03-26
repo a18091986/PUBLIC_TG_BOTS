@@ -52,7 +52,7 @@ async def calculate(msg: types.Message):
                     log_in_file_and_print_in_terminal(msg=f"{answer}\n", loglevel=3)
 
                 await bot.send_message(chat_id=msg.from_user.id, text=answer,
-                                       reply_markup=get_kb(['!В_главное_меню']), parse_mode='text')
+                                       reply_markup=get_kb(['!В_главное_меню']))
 
                 log_in_file_and_print_in_terminal(msg=f"SEND TO USER {msg.from_user.id} - {msg.from_user.username}\n"
                                                       f"{answer}\n on message \n{msg.text}\n\n",
