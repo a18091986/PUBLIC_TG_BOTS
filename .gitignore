@@ -3,12 +3,9 @@
 *.ini
 *.pkl
 **/answer.txt
-<<<<<<< HEAD
 **/.log
-=======
 *.exe
 **/.exe
->>>>>>> 9eb500b45c15c04f50aeba498071958d01c103bd
 
 # directories
 **/serialize_files
@@ -22,7 +19,6 @@
 **/__pycache__
 **/DATA_IN/
 **/DATA_OUT/
-**/DATA/
 **/OUT
 **/assets
 **/.dbeaver
